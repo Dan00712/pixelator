@@ -2,7 +2,7 @@
 
 [build-system]
 requires=["setuptools"]
-build_backend="setuptools.build_meta"
+build-backend="setuptools.build_meta"
 
 
 [project]
@@ -13,5 +13,5 @@ dynamic=["version"]
 [project.scripts]
 pixelator="pixelator.__main__:main"
 
-[tools.setuptools.dynamic]
+[tool.setuptools.dynamic]
 version = {attr = 'pixelator.__version__'}
